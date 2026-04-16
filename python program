@@ -1,0 +1,32 @@
+import pandas as pd
+
+data = {
+    "Vehicle": ["Activa", "Pulsar", "Duke", "Apache", "Unicorn",
+                "Shine", "FZ", "R15", "Splendor", "Access",
+                "Jupiter", "Gixxer", "CBR", "Dominar", "Avenger",
+                "Hornet", "NTorq", "Pleasure", "RayZ", "Xpulse"],
+
+    "CC": [110, 150, 200, 160, 150,
+           125, 150, 155, 100, 125,
+           110, 155, 250, 400, 220,
+           180, 125, 110, 125, 200],
+
+    "Model": [2020, 2021, 2022, 2023, 2020,
+              2021, 2022, 2023, 2019, 2020,
+              2021, 2022, 2023, 2024, 2021,
+              2022, 2023, 2020, 2021, 2024],
+
+    "Color": ["Black", "Red", "Orange", "Blue", "Grey",
+              "Black", "Blue", "Red", "Black", "White",
+              "Grey", "Blue", "Red", "Black", "Silver",
+              "Red", "Yellow", "Pink", "Blue", "Green"],
+
+    "Price": [75000, 100000, 200000, 120000, 110000,
+              80000, 105000, 180000, 70000, 90000,
+              85000, 115000, 220000, 250000, 140000,
+              130000, 95000, 65000, 85000, 160000]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
